@@ -31,3 +31,15 @@ C:\Users\sfzin\OneDrive\Documents\GitHub\myVPN\myVPN\obj\Debug\myVPN.csproj.Gene
 C:\Users\sfzin\OneDrive\Documents\GitHub\myVPN\myVPN\obj\Debug\myVPN.csproj.CopyComplete
 C:\Users\sfzin\OneDrive\Documents\GitHub\myVPN\myVPN\obj\Debug\myVPN.exe
 C:\Users\sfzin\OneDrive\Documents\GitHub\myVPN\myVPN\obj\Debug\myVPN.pdb
+D:\Hung\Hoc\DaihocKHTN\PhanTichThietKePM\ConnectVPN\myVPN\bin\Debug\myVPN.exe.config
+D:\Hung\Hoc\DaihocKHTN\PhanTichThietKePM\ConnectVPN\myVPN\bin\Debug\myVPN.exe
+D:\Hung\Hoc\DaihocKHTN\PhanTichThietKePM\ConnectVPN\myVPN\bin\Debug\myVPN.pdb
+D:\Hung\Hoc\DaihocKHTN\PhanTichThietKePM\ConnectVPN\myVPN\bin\Debug\CircularProgressBar.dll
+D:\Hung\Hoc\DaihocKHTN\PhanTichThietKePM\ConnectVPN\myVPN\bin\Debug\WinFormAnimation.dll
+D:\Hung\Hoc\DaihocKHTN\PhanTichThietKePM\ConnectVPN\myVPN\obj\Debug\myVPN.csprojAssemblyReference.cache
+D:\Hung\Hoc\DaihocKHTN\PhanTichThietKePM\ConnectVPN\myVPN\obj\Debug\myVPN.Form1.resources
+D:\Hung\Hoc\DaihocKHTN\PhanTichThietKePM\ConnectVPN\myVPN\obj\Debug\myVPN.Properties.Resources.resources
+D:\Hung\Hoc\DaihocKHTN\PhanTichThietKePM\ConnectVPN\myVPN\obj\Debug\myVPN.csproj.GenerateResource.cache
+D:\Hung\Hoc\DaihocKHTN\PhanTichThietKePM\ConnectVPN\myVPN\obj\Debug\myVPN.csproj.CopyComplete
+D:\Hung\Hoc\DaihocKHTN\PhanTichThietKePM\ConnectVPN\myVPN\obj\Debug\myVPN.exe
+D:\Hung\Hoc\DaihocKHTN\PhanTichThietKePM\ConnectVPN\myVPN\obj\Debug\myVPN.pdb

@@ -22,8 +22,8 @@ namespace myVPN
             if (!Directory.Exists(FolderPath))
                 Directory.CreateDirectory(FolderPath);
             //string txtHost = "103.142.139.35";
-            string txtUsrname = "administrator";
-            string txtPassword = "Halo@@123#";
+            string txtUsrname = "loliteam";
+            string txtPassword = "Hungkute@)@)";
             var sb = new StringBuilder();
             sb.AppendLine("[VPN]");
             sb.AppendLine("Encoding=1");
@@ -76,7 +76,7 @@ namespace myVPN
             sb.AppendLine("ShowMonitorIconInTaskBar=1");
             sb.AppendLine("CustomAuthKey=0");
             sb.AppendLine("AuthRestrictions=544");
-            sb.AppendLine("IpPrioritizeRemote=0");
+            sb.AppendLine("IpPrioritizeRemote=1");
             sb.AppendLine("IpInterfaceMetric=0");
             sb.AppendLine("IpHeaderCompression=0");
             sb.AppendLine("IpAddress=0.0.0.0");
@@ -160,7 +160,7 @@ namespace myVPN
             sb.AppendLine("Device=WAN Miniport (IKEv2)");
             sb.AppendLine("");
             sb.AppendLine("DEVICE=vpn");
-            sb.AppendLine("PhoneNumber=103.142.139.21");
+            sb.AppendLine("PhoneNumber=45.119.84.52");
             sb.AppendLine("AreaCode=");
             sb.AppendLine("CountryCode=0");
             sb.AppendLine("CountryID=0");
@@ -189,12 +189,37 @@ namespace myVPN
 
             newProcess.Start();
             newProcess.WaitForExit();
-            btnConnect.Enabled = false;
-            btnDisconnect.Enabled = true;
-            RunUpdate.Enabled = true;
-            Status1.Text = "";
-            status.ForeColor = System.Drawing.Color.Green;
-            status.Text = "Đã thiết lập bảo mật thành công";
+            bool statusvpn = false;
+            if (NetworkInterface.GetIsNetworkAvailable())
+            {
+                NetworkInterface[] interfaces = NetworkInterface.GetAllNetworkInterfaces();
+                foreach (NetworkInterface Interface in interfaces)
+                {
+                    if (Interface.OperationalStatus == OperationalStatus.Up)
+                    {
+                        if ((Interface.NetworkInterfaceType == NetworkInterfaceType.Ppp) && (Interface.NetworkInterfaceType != NetworkInterfaceType.Loopback))
+                        {
+                            statusvpn = true;
+                        }
+                    }
+                }
+            }
+            if (statusvpn)
+            {
+                btnConnect.Enabled = false;
+                btnDisconnect.Enabled = true;
+                RunUpdate.Enabled = true;
+                Status1.Text = "";
+                status.ForeColor = System.Drawing.Color.Green;
+                status.Text = "Đã thiết lập bảo mật thành công";
+            }
+            else
+            {
+                Status1.Text = "";
+                status.ForeColor = System.Drawing.Color.Red;
+                status.Text = "Đã thiết lập bảo mật thất bại";
+            }
+           
         }
 
         private void btnDisconnect_Click(object sender, EventArgs e)
