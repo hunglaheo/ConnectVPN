@@ -292,5 +292,10 @@ namespace myVPN
             else
                 System.Environment.Exit(1);
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
